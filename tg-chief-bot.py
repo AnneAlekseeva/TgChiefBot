@@ -7,7 +7,7 @@ from io import StringIO
 import random
 
 # Токен бота для доступа к API Telegram
-token = "7181840277:AAFHRotoGDgGKx-TEpbpM7naed6ETlGWAAY"
+token = "your token"
 bot = telebot.TeleBot(token, threaded=False)
 # URL для загрузки CSV данных с рецептами
 url = "https://storage.yandexcloud.net/img-tg-bot/tg-bot-chief/rec_1000.csv"
@@ -281,3 +281,4 @@ def handle_pagination(call):
     elif call.data == 'back':
         user_data[chat_id]['current_index'] -= 5
     send_recipes(chat_id)
+
